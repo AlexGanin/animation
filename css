@@ -1,0 +1,84 @@
+button:hover {
+    /* background: #cecece;
+    transition-duration: 1s; */
+    background-position: 0;
+
+    /*TRANSITION*/
+    transition-property: all; /*Св-ва к которым будет применяться*/
+    transition-duration: 0.5s; /*Продолжительность перехода*/
+    transition-timing-function: ease; /*Стиль перехода 
+    ease ease-in ease-out ease-in-out linear 
+    steps(int,start|end) 
+    cubic-bezier(x1,y1,x2,y2) */
+    transition-delay: 0s; /*Задержка перехода*/
+    /* transition: all 1s ease 0s; */
+}
+
+
+
+
+
+
+
+
+@keyframes rotate-phone {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+
+    }
+    100% {
+        transform: rotate(1440deg);
+    }
+}
+
+.class:hover {
+    animation-name: rotate-phone;
+    animation-duration: 1s; /*Время выполнения*/
+    animation-timing-function: linear; /*Тип анимации ease*/
+    animation-iteration-count: infinite; /*Количество повторений 1,2,3..., infinite-бесконечно*/
+    animation-direction: alternate; /*Запуск обратного движения normal, alternate, alternate-reverse*/
+    animation-delay: 3s;/*Задержка*/
+    animation-fill-mode: forward;/*В каком положении закончится анимация (none forwards)*/
+    
+    /*animation-play-state: paused;*/ /*Приостановка при наведении (не учавствует в animation)*/
+    /* animation: white-circle 2s linear infinite alternate 0s forwards; */
+    transition: .3s;
+    transform: scale(-1,1);
+    color:#af68ff;
+}
+
+
+
+.class {
+/*TRANSFORM*/
+    /* transform: rotate(10deg);
+        Трансформирует объект block
+        translate(x,y)translateX,translateY - смещение по двум осям
+        translate3D(x,y,z) - смещение по трем осям
+        scale(x,y),scaleX,scaleY - масштабирование по двум осям
+        scale3D(x,y,z) - масштабирование по трем осям
+        rotate(10deg) - разворот
+        rotate3D(1,1,1,45deg) - 
+        skew(15deg,25deg),skewX,skewY - искажние
+        matrix(a,c,b,d,x,y) - все свойства сразу
+        matrix3D(n,n,n,n,n,n,n,n,n,n,n,n,n,n,n,n)
+        transform: translate(50px,50px) scale(0.5) rotate(45deg)
+        transform: translate3D(20px,0px,150px) rotate3D(1,1,1,45deg)
+    */
+    /*transform-origin: center; *//*Центр трансформации center, top left, 0 0*/
+    /*transform-style: preserve-3d;*/ /*Стиль трансформации flat, preserve-3d*/
+    /*backface-visibility: visible*/ /*Скрывает обратную сторону при развороте visible, hidden*/
+
+    
+    /*perspective: 400px;*/ /*Установка перспективы*/
+    /*perspective-origin: center;*/ /*Установка места, откуда будет работать свойство*/
+    
+
+    /* transform: translate3D(-5px, 5px, 50px); */
+    /* transform: rotate3d(1, 1, 1, 45deg); */
+    /* transform: scale3D(1.1,1.1,15);
+    transition: 1s; */
+}
+
